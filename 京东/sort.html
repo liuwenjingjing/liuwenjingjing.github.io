@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sort-京东</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="font-btn/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="sort">
+     <nav>
+        <ul>
+            <li>
+                <a href="index.html"><i class="fa fa-home"></i><span>首页</span></a>
+            </li>
+            <li class="active">
+                <a href="sort.html"><i class="fa fa-tasks"></i><span>分类</span></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-times-circle-o"><i class="hot"></i></i><span>觅Me</span></a>
+            </li>
+            <li>
+                <a href="" class="hott"><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
+            </li>
+            <li>
+                <a href=""><i class="fa fa-user-o"></i><span>我的</span></a>
+            </li>
+        </ul>
+    </nav>
+    
+    
+    
+    <!--main部分--->
+    <div class="sort-main">
+<!--        <div class="container">-->
+            <div class="row">
+                <div class="col-xs-3">
+                    <ul id="sortlist">
+                        <li class="active">热门推荐</li>
+                        <li>手机数码</li>
+                        <li>家用电器</li>
+                        <li>电脑办公</li>
+                        <li>计生情趣</li>
+                        <li>美妆护肤</li>
+                        <li>个护清洁</li>
+                        <li>汽车用品</li>
+                        <li>京东超市</li>
+                        <li>男装</li>
+                        <li>男鞋</li>
+                        <li>女装</li>
+                        <li>女鞋</li>
+                        <li>母婴童装</li>
+                        <li>运动户外</li>
+                        <li>内衣配饰</li>
+                        <li>食品生鲜</li>
+                        <li>家居家装</li>
+                        <li>箱包手袋</li>
+                        <li>钟表珠宝</li>
+                        <li>图书音像</li>
+                        <li>医药保健</li>
+                        <li>宠物生活</li>
+                        <li>礼品鲜花</li>
+                        <li>农资绿植</li>
+                        <li>生活旅行</li>
+                        <li>奢侈品</li>
+                        <li>全球购</li>
+                        <li>艺术邮币</li>
+                        <li>二手商品</li>
+                        <li>特产馆</li>
+                        <li>京东金融</li>
+                        <li>拍卖</li>
+                        <li>房产</li>
+                    </ul>
+                </div>
+                <div class="col-xs-9" id="sortright">
+                   <div v-for="sort in sortt" class="top">
+                       <a :href="sort.link"><img :src="sort.img" alt=""></a>
+                        <div class="row">
+                           <h3>{{sort.name}}</h3>
+                            <div class="col-xs-4">
+                                <a href="sort.link">
+                                    <img :src="sort.img1" alt="">
+                                    <p>{{sort.p1}}</p>
+                                    <img :src="sort.img4" alt="">
+                                    <p>{{sort.p4}}</p>
+                                    <img :src="sort.img7" alt="">
+                                    <p>{{sort.p7}}</p>
+                                    <img :src="sort.img10" alt="">
+                                    <p>{{sort.p10}}</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="sort.link">
+                                    <img :src="sort.img2" alt="">
+                                    <p>{{sort.p2}}</p>
+                                    <img :src="sort.img5" alt="">
+                                    <p>{{sort.p5}}</p>
+                                    <img :src="sort.img8" alt="">
+                                    <p>{{sort.p8}}</p>
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="sort.link">
+                                    <img :src="sort.img3" alt="">
+                                    <p>{{sort.p3}}</p>
+                                    <img :src="sort.img6" alt="">
+                                    <p>{{sort.p6}}</p>
+                                    <img :src="sort.img9" alt="">
+                                    <p>{{sort.p9}}</p>
+                                </a>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+<!--        </div>-->
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!--返回顶部--->
+    <div class="totop"></div>
+    
+    
+    <script src="js/vue.js"></script>
+    <script src="js/timeCountDown.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
