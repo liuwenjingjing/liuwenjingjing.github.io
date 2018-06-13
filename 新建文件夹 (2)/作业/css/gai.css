@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contianer{
+    width: 870px;
+    margin: auto;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    font-family: Arial;
+}
+
+
+
+header{
+    background-color: #64bbe8;
+}
+nav{
+    text-align: center;
+}
+nav img{
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+nav a{
+    float: right;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+.banner{
+    color: white;
+}
+.banner .text,.banner .img{
+    float: left;
+    width: 50%;
+}
+.banner .text p{
+    font-size: 14px;
+    font-weight: bold;
+}
+.banner .text h2{
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.banner .text a{
+    color: white;
+    background-color: #2996cc;
+    text-decoration: none;
+    padding: 15px 50px;
+    display: inline-block;
+}
+.banner .img img{
+/*    width: 455px;*/
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+section{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px #e0e0e0 solid;
+}
+section .col{
+    float: left;
+    width: 25%;
+}
+section h3{
+    font-size: 12px;
+    color: #2f3f53;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section p{
+    font-size: 12px;
+    color: #677486;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.download{
+    text-align: center;
+}
+.download h2{
+    margin-top: 60px;
+    margin-bottom: 24px;
+    color: #2e3b4e;
+    font-size: 24px;
+    font-weight: 100;
+}
+.download p{
+    color: #798292;
+    margin-bottom: 35px;
+}
+.download a{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+footer{
+    background-color: #1b2126;
+/*    height: 151px;*/
+}
+.footer{
+    width: 870px;
+    margin: auto;
+    padding-top: 65px;
+    padding-bottom:65px; 
+    color: #495259;
+}
+
+
+
+
+
+@media screen and (max-width: 600px){
+    nav{
+        margin-left: 58px;
+    }
+    .banner .text,.banner .img{
+        width: 100%;
+    }
+    .contianer{
+        width: 80%;
+    }
+    .banner .text{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    section .col{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    section{
+        padding-bottom: 0px;
+    }
+}

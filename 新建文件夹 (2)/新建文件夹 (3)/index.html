@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: gray;
+        }
+        .clearfix:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        li{
+            float: left;
+            background-color: cadetblue;
+            list-style: none;
+            width: 25%;
+            height: 50px;
+            text-align: center;
+        }
+        @media screen and (max-width: 480px){
+            body{
+                background-color: darkgoldenrod;
+            }
+            li{
+                background-color: cornflowerblue;
+                width: 50%;
+/*                width: 100%;*/
+            }
+        }
+    </style>
+</head>
+<body>
+<!--    <img src="images/11_b.jpg" alt="">-->
+<ul class="clearfix">
+    <li><a href="">板块1</a></li>
+    <li><a href="">板块2</a></li>
+    <li><a href="">板块3</a></li>
+    <li><a href="">板块4</a></li>
+</ul>
+</body>
+</html>
