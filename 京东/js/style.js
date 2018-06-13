@@ -18,8 +18,10 @@ var search=document.querySelector(".search");
 window.onscroll=function(){
     if(search !=null){
         if(document.body.scrollTop>115){
+            search.style.top="0";
             document.querySelector(".search").style.background="#884c60";
         }else{
+            search.style.top="auto";
             document.querySelector(".search").style.background="transparent";
         }
     }
