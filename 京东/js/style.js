@@ -22,7 +22,7 @@ if(ad!=null){
 var search=document.querySelector(".search");
 window.onscroll=function(){
     if(search !=null){
-        if(document.body.scrollTop>115){
+        if(document.body.scrollTop>115 || document.documentElement.scrollTop>115){
             search.style.top="0";
             document.querySelector(".search").style.background="#884c60";
         }else{
@@ -166,7 +166,8 @@ new Vue ({
 //回到顶部 jq
 $(function(){
         $(".totop").click(function(){
-            $("body").animate({"scrollTop":"0px"},1500)
+            $("body,html").animate({"scrollTop":0},1500)
+//            alert("123");
         });
     $(".totop").hide();
         $(window).scroll(function(){
@@ -242,51 +243,5 @@ for(var i=0;i<sortmainli.length;i++){
         sortrow[this.aa].setAttribute("class","appear");
     } 
 }
-
-
-//
-//onLoad=function (options){  
-//    var that = this;  
-//    //获得分类筛选  
-//    request.sendRrquest(API_queryClassify, 'POST', { flag: 0 }, )  
-//      .then(function (res) {  
-//        console.log("返回数据：");  
-//        var screenArray = res.data.data.screenArray;  
-//        var screenId = screenArray[0].screenId;  
-//        that.setData({  
-//          screenArray: screenArray,  
-//          screenId: screenId,  
-//        })  
-//        console.log(screenArray);  
-//        request.sendRrquest(API_queryClassify, 'POST', { flag:1, screenId:screenId }, )  
-//          .then(function (res) {  
-//            console.log("返回数据：");  
-//            that.setData({  
-//              childrenArray: res.data.data.screenArray[0],  
-//            })  
-//            console.log(that.data.childrenArray);  
-//          }, function (error) {console.log("返回失败");});  
-//      },function (error) {console.log("返回失败");});  
-//  },  
-//  
-//  navbarTap=function(e){  
-//    var that = this;  
-//    console.log(e);  
-//    this.setData({  
-//      currentTab: e.currentTarget.id,   //按钮CSS变化  
-//      screenId: e.currentTarget.dataset.screenid,  
-//      scrollTop: 0,   //切换导航后，控制右侧滚动视图回到顶部  
-//    })  
-//    //刷新右侧内容的数据  
-//    var screenId = this.data.screenId;  
-//    request.sendRrquest(API_queryClassify, 'POST', { flag: 1, screenId: screenId }, )  
-//      .then(function (res) {  
-//        console.log("返回数据：");  
-//        that.setData({  
-//          childrenArray: res.data.data.screenArray[0],  
-//        })  
-//        console.log(that.data.childrenArray);  
-//      }, function (error) { console.log("返回失败"); });  
-//  }  
 
 
