@@ -1,15 +1,20 @@
 //点击消失
 var ad=document.querySelector("#ad");
 var adl=document.querySelector("#btn");
-if(sessionStorage.ad=="floes"){
-    ad.style.display="none";
-}else{
-    ad.style.display="block";
+if(ad!=null){
+    if(sessionStorage.ad=="floes"){
+        ad.style.display="none";
+    }else{
+        ad.style.display="block";
+    }
 }
-adl.onclick=function(){
-    ad.style.display="none";
-    sessionStorage.ad="floes"
+if(ad!=null){
+    adl.onclick=function(){
+        ad.style.display="none";
+        sessionStorage.ad="floes"
+    }
 }
+
 
 
 
