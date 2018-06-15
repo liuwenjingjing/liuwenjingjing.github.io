@@ -502,13 +502,17 @@ nav .hot {
 .aishenghuo .col-xs-6{
     position: relative;
 }
+
+.aishenghuo a {
+    display: block;
+}
 .aishenghuo i{
     width: 41px;
     height: 14px;
     display: inline-block;
     background-size: cover;
     position: absolute;
-    top: 134px;
+    bottom: 0px;
     left: 0px;
     z-index: 50;
 }
@@ -583,7 +587,7 @@ nav .hot {
     display: inline-block;
     background-size: cover;
     position: absolute;
-    top: 134px;
+    bottom: 0px;
     left: 0px;
     z-index: 50;
 }
@@ -651,7 +655,7 @@ nav .hot {
     display: inline-block;
     background-size: cover;
     position: absolute;
-    top: 134px;
+    bottom: 0;
     left: 0px;
     z-index: 50;
 }
@@ -1200,6 +1204,205 @@ nav .hot {
     margin-right: -5px;
 }
 */
+
+
+
+
+
+
+
+
+
+/*---Me样式---*/
+.me{
+    background: #f5f5f5;
+}
+.me-top .top .fa1,.me-top .top .fa2,.me-top .top h1{
+    float: left;
+}
+.me-top .top h1{
+    font-size: 20px;
+    width: 80%;
+    margin:0px;
+    padding-top: 10px;
+}
+.me-top .top .fa1,.me-top .top .fa2{
+    font-size: 20px;
+    width: 10%;
+    padding-top: 10px;
+    color: #000;
+}
+.me-top .top::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.me-top .top{
+    text-align: center;
+/*    width: 80%;*/
+    background: #fff;
+    padding-bottom: 20px;
+}
+.me-top ul::after,.me-top .me-btn::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.me-top li{
+    float: left;
+    list-style: none;
+    padding: 5px 10px;
+}
+.me-top ul{
+    width: 400px;
+    height: 30px;
+/*    position: relative;*/
+    margin-bottom: 0;
+}
+.me-top .ul{
+    overflow: scroll;
+    background-color: #fff;
+/*    position: relative;*/
+/*    border-bottom: 1px #d6d6d6 solid;*/
+    height: 33px;
+    margin-bottom: 10px;
+}
+
+.me-btn {
+    position: absolute;
+    right: 0px;
+    top: 44px;
+}
+
+.me-btn img{
+    width: 40px;
+    height: 40px;
+    box-shadow:  -5px 0 5px  #c5c5c5;
+/*    z-index: 100;*/
+/*    display: block;*/
+}
+.me-top .ul .active{
+    color: red;
+    border-bottom: 2px red solid;
+}
+.me-main h2{
+    font-size: 20px;
+}
+.me-main img{
+    width: 100%;
+}
+.me-main .row{
+    margin: 0px;
+    background-color: #fff;
+}
+.me-main .col-xs-8{
+   padding-left: 5px;
+    padding-right: 5px;
+}
+.me-main .col-xs-4{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 17px;
+}
+.me-main .col-xs-4 .row{
+/*    position: relative;*/
+}
+.me-main .col-xs-4 p{
+/*    position: absolute;*/
+/*    left: 54px;*/
+/*    top: 69px;*/
+}
+.me-main .col-xs-8 i{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+}
+.me-main .row{
+    margin-bottom: 10px;
+}
+
+.me-main .col-xs-4 {
+    position: relative;
+}
+
+.me-main .col-xs-4 a {
+    display: block;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.me-main .col-xs-4 a p{
+    padding: 2px;
+    font-size: 12px;
+    background-color: #9a998a;
+    width: 48px;
+    color: #fff;
+    margin: 0;
+}
+.me-main .col-xs-12{
+    padding: 0;
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.me-main .col-xs-12 .tx{
+    width: 20px;
+    height: 20px;
+}
+
+
+.memes .mmm{
+    margin: 0px;
+    padding: 0;
+}
+.memes .col-xs-12{
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+}
+.memes .col-xs-12 .tx{
+    width: 20px;
+    height: 20px;
+}
+.memes img{
+    width: 100%;
+}
+.me-main .top-top .p{
+    color: #fff;
+    background-color: red;
+    padding: 6px;
+    width: 150px;
+}
+.me-main .top-top a{
+    text-align: center;
+    display: inline-block;
+}
+.me-main .top-top{
+    text-align: center;
+    background-image: url(../images/me/guanzhu-bg.jpg);
+/*    height: 200px;*/
+    background-size: cover;
+    display: inline-block;
+    width: 100%;
+}
+/*
+
+.me-top{
+    position: fixed;
+    z-index: 10;
+}
+.meme-main{
+    padding-top: 94px;
+}
+
+
+*/
+
+
+
+
+
 
 
 

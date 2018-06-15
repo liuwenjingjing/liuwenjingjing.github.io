@@ -22,7 +22,7 @@
                 <a href="sort.html"><i class="fa fa-tasks"></i><span>分类</span></a>
             </li>
             <li class="active">
-                <a href="me.html"><i class="fa fa-times-circle-o"><i class="hot"></i></i><span>觅Me</span></a>
+                <a href="me.html"><i class="fa fa-times-circle-o"><i class=""></i></i><span>觅Me</span></a>
             </li>
             <li>
                 <a href="" class="hott"><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
@@ -33,12 +33,71 @@
         </ul>
     </nav>
     <div class="me-top">
-        <i class="fa fa-minus-square-o"></i>
-        <h1>lalala111121</h1>
-        <i></i>
+       <div class="top">
+           <a href="#"><i class="fa fa-minus-square-o fa1"></i></a>
+            <h1>觅·Me</h1>
+            <a href="#"><i class="fa fa-commenting-o fa2"></i></a>
+       </div>
+       <div class="ul bb">
+           <ul>
+               <li class="active">精选</li>
+               <li>关注</li>
+               <li>视频购</li>
+               <li>社区</li>
+               <li>好东西</li>
+               <li>直播</li>
+               <li>数码</li>
+           </ul>
+        </div>
+        <div class="me-btn"><img src="images/me/top-btn.jpg" alt=""></div>
     </div>
+<!--    <div class="meme-main">-->
+    <div class="me-main">
+       <div class="memes" id="me-main">
+           <div class="row bt bb" v-for="meme in me">
+                <div class="col-xs-8">
+                    <h2>{{meme.h2}}</h2>
+                    <p><i><img :src="meme.tx" alt=""></i>{{meme.p}}</p>
+                </div>
+                <div class="col-xs-4">
+                    <img :src="meme.img" alt="">
+                    <a :href="meme.pa"><p>{{meme.pp}}</p></a>
+                </div>
+            </div>
+            <div cla
+               ss="row" v-for="mem in mee">
+                <div class="col-xs-12 bt bb">
+                    <img :src="mem.img" alt="">
+                    <h2>{{mem.h2}}</h2>
+                    <p><i><img :src="mem.tx" alt="" class="tx"></i>{{mem.p}}</p>
+                </div>
+            </div>
+       </div>
     
+    <div class="memes" id="main-me">
+          <div class="top-top">
+              <p>登录后才能看关注的内容哦~</p>
+              <a href="#"><p class="p">登录</p></a>
+          </div>
+           <div class="row bt bb mmm" v-for="memm in mm">
+                <div class="col-xs-3">
+                    <a href=""><img :src="memm.img" alt=""></a>
+                </div>
+                <div class="col-xs-6">
+                    <h2>{{memm.h2}}</h2>
+                    <span>{{memm.span}}</span>
+                    <p>{{memm.p}}</p>
+                    <p></p>
+                </div>
+                <div class="col-xs-3">
+                    <a :href="memm.imga"><img :src="memm.imgbtn" alt=""></a>
+                </div>
+            </div>
+       </div>
     
+   </div> 
+    
+<!--    </div>-->
     
     
     

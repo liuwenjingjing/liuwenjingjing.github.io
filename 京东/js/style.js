@@ -223,12 +223,16 @@ new Vue ({
 //选项卡
 var sortmainli=document.querySelectorAll(".sort-main li");
 var sortrow=document.querySelectorAll(".sort-main .col-xs-9 .top");
-console.log(sortrow);
+//console.log(sortrow[1]);
 for(var z=0;z<sortrow.length;z++){
     sortrow[z].setAttribute("class","disappear");
 }
-sortrow[0].setAttribute("class","appear");
-sortmainli[0].style.backgroundColor="#f5f5f5";
+if(sortrow[0] !== undefined){
+    sortrow[0].setAttribute("class","appear");
+    sortmainli[0].style.backgroundColor="#f5f5f5";
+}
+
+
 for(var i=0;i<sortmainli.length;i++){
     sortmainli[i].aa=i;
     sortmainli[i].onclick=function(){
@@ -244,4 +248,55 @@ for(var i=0;i<sortmainli.length;i++){
     } 
 }
 
+
+
+
+
+
+new Vue ({
+    el:"#me-main",
+    data:{
+        me:[
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"8件宝贝",pa:"www.baidu.com"},
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"4件宝贝",pa:"www.baidu.com"},
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
+            
+        ],
+         mee:[
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/max1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/max2.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
+        ],
+    }
+})
+new Vue({
+    el:"#main-me",
+    data:{
+        mm:[
+            {h2:"Becks",img:"images/me/gz-tx1.png",span:"粉丝数3024·发布871篇",p:"04月15日更新《OPP商务皮鞋》",tx:"images/me/tx1.png",imga:"www.baidu.com",imgbtn:"images/me/gz-btn.jpg"},
+        ],
+    }
+})
+//选项卡
+var melis=document.querySelectorAll(".me-top li");
+var memain=document.querySelectorAll(".memes");
+console.log(memain);
+for(var q=0;q<memain.length;q++){
+    memain[q].setAttribute("class","disappear");
+}
+memain[0].setAttribute("class","appear");
+
+
+for(var i=0;i<melis.length;i++){
+    melis[i].index=i;
+    melis[i].onclick=function(){
+        for(var j=0;j<memain.length;j++){
+            memain[j].setAttribute("class","disappear");
+           melis[j].style.border="none";
+            melis[j].style.color = "#000";
+        }
+        melis[this.index].style.borderBottom ="2px solid red";
+        this.style.color = "red";
+        memain[this.index].setAttribute("class","appear");
+    } 
+}
 
