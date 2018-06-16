@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>首页-京东</title>
+    <title>觅Me-京东</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
     <link rel="stylesheet" href="">
@@ -25,7 +25,7 @@
                 <a href="me.html"><i class="fa fa-times-circle-o"><i class=""></i></i><span>觅Me</span></a>
             </li>
             <li>
-                <a href="" class="hott"><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
+                <a href="cart.html" class="hott"><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
             </li>
             <li>
                 <a href=""><i class="fa fa-user-o"></i><span>我的</span></a>
@@ -72,16 +72,36 @@
                     <p><i><img :src="mem.tx" alt="" class="tx"></i>{{mem.p}}</p>
                 </div>
             </div>
+            <div class="row bt bb" v-for="mee in mes">
+                <div class="col-xs-8">
+                    <h2>{{mee.h2}}</h2>
+                    <p><i><img :src="mee.tx" alt=""></i>{{mee.p}}</p>
+                </div>
+                <div class="col-xs-4">
+                    <img :src="mee.img" alt="">
+                    <a :href="mee.pa"><p>{{mee.pp}}</p></a>
+                </div>
+            </div>
+            <div cla
+               ss="row" v-for="mems in mem">
+                <div class="col-xs-12 bt bb">
+                    <img :src="mems.img" alt="">
+                    <h2>{{mems.h2}}</h2>
+                    <p><i><img :src="mems.tx" alt="" class="tx"></i>{{mems.p}}</p>
+                </div>
+            </div>
        </div>
     
-    <div class="memes" id="main-me">
+    <div class="memes">
           <div class="top-top">
               <p>登录后才能看关注的内容哦~</p>
               <a href="#"><p class="p">登录</p></a>
           </div>
+          <div class="xihuan bt"><p>猜你喜欢TA</p></div>
+          <div id="main-me">
            <div class="row bt bb mmm" v-for="memm in mm">
                 <div class="col-xs-3">
-                    <a href=""><img :src="memm.img" alt=""></a>
+                    <a href=""><img :src="memm.img" alt="" class="img1"></a>
                 </div>
                 <div class="col-xs-6">
                     <h2>{{memm.h2}}</h2>
@@ -90,11 +110,11 @@
                     <p></p>
                 </div>
                 <div class="col-xs-3">
-                    <a :href="memm.imga"><img :src="memm.imgbtn" alt=""></a>
+                    <a :href="memm.imga" class="imga"><img :src="memm.imgbtn" alt="" class="img2"></a>
                 </div>
             </div>
-       </div>
-    
+           </div>
+    </div>
    </div> 
     
 <!--    </div>-->

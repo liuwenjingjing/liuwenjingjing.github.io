@@ -266,12 +266,27 @@ new Vue ({
             {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/max1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
             {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/max2.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
         ],
+         mes:[
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"8件宝贝",pa:"www.baidu.com"},
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"4件宝贝",pa:"www.baidu.com"},
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
+            
+        ],
+         mem:[
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/max1.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
+            {h2:"打破黑白灰的沉闷感，你只差一只红色包包",img:"images/me/max2.jpg",p:"米粒搭配·1133人阅读",tx:"images/me/tx1.png",pp:"3件宝贝",pa:"www.baidu.com"},
+        ],
     }
 })
 new Vue({
     el:"#main-me",
     data:{
         mm:[
+            {h2:"Becks",img:"images/me/gz-tx1.png",span:"粉丝数3024·发布871篇",p:"04月15日更新《OPP商务皮鞋》",tx:"images/me/tx1.png",imga:"www.baidu.com",imgbtn:"images/me/gz-btn.jpg"},
+            {h2:"Becks",img:"images/me/gz-tx1.png",span:"粉丝数3024·发布871篇",p:"04月15日更新《OPP商务皮鞋》",tx:"images/me/tx1.png",imga:"www.baidu.com",imgbtn:"images/me/gz-btn.jpg"},
+            {h2:"Becks",img:"images/me/gz-tx1.png",span:"粉丝数3024·发布871篇",p:"04月15日更新《OPP商务皮鞋》",tx:"images/me/tx1.png",imga:"www.baidu.com",imgbtn:"images/me/gz-btn.jpg"},
+            {h2:"Becks",img:"images/me/gz-tx1.png",span:"粉丝数3024·发布871篇",p:"04月15日更新《OPP商务皮鞋》",tx:"images/me/tx1.png",imga:"www.baidu.com",imgbtn:"images/me/gz-btn.jpg"},
+            {h2:"Becks",img:"images/me/gz-tx1.png",span:"粉丝数3024·发布871篇",p:"04月15日更新《OPP商务皮鞋》",tx:"images/me/tx1.png",imga:"www.baidu.com",imgbtn:"images/me/gz-btn.jpg"},
             {h2:"Becks",img:"images/me/gz-tx1.png",span:"粉丝数3024·发布871篇",p:"04月15日更新《OPP商务皮鞋》",tx:"images/me/tx1.png",imga:"www.baidu.com",imgbtn:"images/me/gz-btn.jpg"},
         ],
     }
@@ -283,8 +298,9 @@ console.log(memain);
 for(var q=0;q<memain.length;q++){
     memain[q].setAttribute("class","disappear");
 }
+if(memain[0] !== undefined){
 memain[0].setAttribute("class","appear");
-
+}
 
 for(var i=0;i<melis.length;i++){
     melis[i].index=i;

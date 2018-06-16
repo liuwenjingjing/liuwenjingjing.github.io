@@ -1361,6 +1361,9 @@ nav .hot {
     margin: 0;
     background-color: #fff;
 }
+.me-main .col-xs-12 h2,.me-main .col-xs-12 p{
+    margin-left: 5px;
+}
 .memes .col-xs-12 .tx{
     width: 20px;
     height: 20px;
@@ -1378,6 +1381,14 @@ nav .hot {
     text-align: center;
     display: inline-block;
 }
+.me-main h2{
+    font-size: 14px;
+    font-weight: bold;
+}
+.me-main p{
+    color: #b5b5b5;
+    font-size: 12px;
+}
 .me-main .top-top{
     text-align: center;
     background-image: url(../images/me/guanzhu-bg.jpg);
@@ -1386,6 +1397,57 @@ nav .hot {
     display: inline-block;
     width: 100%;
 }
+.me-main .col-xs-3:nth-of-type(1){
+    
+}
+.me-main .col-xs-3 .img1{
+   padding-top: 16px;
+/*    line-height: 50%;*/
+}
+#main-me .col-xs-3 .imga::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.me-main .mmm {
+    width: 100%;
+}
+
+.me-main .xihuan p{
+    background-color: #fff;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+}
+
+.me-main .col-xs-3 a {
+     vertical-align:middle;
+    display: block;
+}
+
+.me-main .col-xs-3 .img2{
+    padding-top: 10px;
+    width: 63px;
+    height: 37px;
+    float: right;
+}
+.me-main .col-xs-3{
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+.me-main .col-xs-6{
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+
+
+
+
+
 /*
 
 .me-top{
@@ -1398,6 +1460,82 @@ nav .hot {
 
 
 */
+
+
+
+
+
+
+
+
+
+
+
+/*--购物车部分样式--*/
+.cart{
+    background-color: #f5f5f5;
+}
+.cart .header{
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.cart .header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.cart h1{
+    margin: 0px;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight:bold;
+/*    float: left;*/
+}
+.cart .header i{
+/*    float: left;*/
+    float: right;
+    margin-top: -34px;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #81838e;
+}
+.cart .weini{
+    text-align: center;
+    margin-top: 10px;
+}
+.cart .weini p{
+    background-image: url(../images/gouwuche/gou-bg.png);
+    display: inline-block;
+    height: 30px;
+    width: 150px;
+    background-size: cover;
+    font-size: 16px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+.cart .weini span{
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
