@@ -42,6 +42,26 @@
         你<span>·</span>
         推<span>·</span>荐</p>
     </div>
+    <div class="gou-main" id="gou-main">
+        <div class="row">
+            <div class="col-xs-6" v-for="gou in gous">
+                <a :href="gou.imga"><img :src="gou.img" alt=""></a>
+                <div class="img">
+                    <h2><img :src="gou.i1" alt="" class="i1">{{gou.h2}}</h2>
+                    <p>
+                        <span class="span1">{{gou.span1}}</span>
+                        <span class="span2">{{gou.span2}}</span>
+                        {{gou.p}}<img :src="gou.i2" alt="" class="i2">
+                    </p>
+                    <div class="cart"><a :href="gou"><img :src="gou.imgbtn" alt="" class="i3"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
     
     <div class="totop"></div>
     

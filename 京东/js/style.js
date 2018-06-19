@@ -252,7 +252,7 @@ for(var i=0;i<sortmainli.length;i++){
 
 
 
-
+///me
 new Vue ({
     el:"#me-main",
     data:{
@@ -316,3 +316,38 @@ for(var i=0;i<melis.length;i++){
     } 
 }
 
+
+
+
+
+
+
+//cart
+new Vue({
+    el:"#gou-main",
+    data:{
+        gous:[
+            {h2:"BORNTUN 三角玻璃钻头 玻璃尖钻 玻璃开孔器 瓷砖钻头 ",img:"images/gouwuche/1.jpg",i1:"images/gouwuche/ziying.jpg",i2:"images/gouwuche/plus.jpg",imga:"www.baidu.com",gou:"www.baidu.com",span1:"￥",span2:"21.80",p:"￥19.80"},
+            {h2:"BORNTUN 三角玻璃钻头 玻璃尖钻 玻璃开孔器 瓷砖钻头 ",img:"images/gouwuche/1.jpg",i1:"images/gouwuche/ziying.jpg",i2:"images/gouwuche/plus.jpg",imga:"www.baidu.com",gou:"www.baidu.com",imgbtn:"images/gouwuche/gouwuche.png",span1:"￥",span2:"21.80",p:"￥19.80"},
+            {h2:"BORNTUN 三角玻璃钻头 玻璃尖钻 玻璃开孔器 瓷砖钻头 ",img:"images/gouwuche/1.jpg",i1:"images/gouwuche/ziying.jpg",imga:"www.baidu.com",gou:"www.baidu.com",imgbtn:"images/gouwuche/gouwuche.png",span1:"￥",span2:"21.80",p:"￥19.80"},
+            {h2:"BORNTUN 三角玻璃钻头 玻璃尖钻 玻璃开孔器 瓷砖钻头 ",img:"images/gouwuche/1.jpg",i2:"images/gouwuche/plus.jpg",imga:"www.baidu.com",gou:"www.baidu.com",imgbtn:"images/gouwuche/gouwuche.png",span1:"￥",span2:"21.80",p:"￥19.80"},
+        ],
+    }
+})
+var goui=document.querySelectorAll(".gou-main .img img");
+console.log(goui);
+////for(var c=0;c<goui.length;c++){
+//    if(goui!=null){
+//        goui.style.width=30px;
+//    }
+//
+////}
+for(var c=0;c<goui.length;c++){
+    if(goui[c]!=null){
+        goui[c].style.width="20%";
+    }else{
+        this.style.width="0%";
+    }
+        console.log(goui[c])
+
+}
