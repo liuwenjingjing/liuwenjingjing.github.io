@@ -53,7 +53,6 @@ var mySwiper = new Swiper ('.banner', {
 //京东快报
 
 //方法一
-0.
 //setInterval(function(){
 //    x();
 //    setTimeout(function(){
