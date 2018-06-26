@@ -29,7 +29,7 @@
                 <a href="cart.html" class="hott"><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
             </li>
             <li>
-                <a href=""><i class="fa fa-user-o"></i><span>我的</span></a>
+                <a href="my.html"><i class="fa fa-user-o"></i><span>我的</span></a>
             </li>
         </ul>
     </nav>
@@ -97,7 +97,27 @@
            </div>
        </div>
    </div>
-   
+   <div class="wei">
+       <div class="top">
+                <h2>为/你/推/荐</h2>
+            </div>
+            <div class="row" id="wei">
+                <div class="col-xs-6" v-for="arr in arrs">
+                   <div>
+                      <a :href="arr.link1"><img :src="arr.img" alt=""></a>
+                      <a :href="arr.link1"><h3> {{arr.name}}</h3></a>
+                      <p class="clearfix">￥<span class="span1">{{arr.price1}}</span><del class="span2">{{arr.price2}}</del><a :href="arr.link2" class="kan">{{arr.kan}}</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-6 sss" v-for="arr in arrs">
+                   <div>
+                      <a :href="arr.link1"><img :src="arr.img" alt=""></a>
+                      <a :href="arr.link1"><h3> {{arr.name}}</h3></a>
+                      <p class="clearfix">￥<span class="span1">{{arr.price1}}</span><del class="span2">{{arr.price2}}</del><a :href="arr.link2" class="kan">{{arr.kan}}</a></p>
+                    </div>
+                </div>
+            </div>
+   </div>
    <div class="bottomm clearfix">
        <img src="images/bottom.png" alt="">
        <div class="p">
@@ -108,7 +128,7 @@
         <span class="span">X</span>
    </div>
    
-   
+   <div class="dakai"><a href=""></a></div>
    
     <div class="totop"></div>
     

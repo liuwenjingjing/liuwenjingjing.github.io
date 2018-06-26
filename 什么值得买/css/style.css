@@ -16,14 +16,27 @@ body{
 /*--返回顶部---*/
 .totop{
     background-image: url(../images/totop.png);
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    display: inline-block;
+    position: fixed;
+    bottom: 140px;
+    right: 22px;
+    opacity: 0.7;
+    z-index: 200;
+}
+/*--打开APP---*/
+.dakai a{
+    background-image: url(../images/shouye/dakaiapp.png);
+    width: 53px;
+    height: 60px;
     background-size: cover;
     display: inline-block;
     position: fixed;
     bottom: 74px;
     right: 10px;
-    opacity: 0.7;
+/*    opacity: 0.7;*/
     z-index: 200;
 }
 
@@ -90,6 +103,78 @@ nav .hot {
     right: 0;
     z-index: 100;
 }
+
+/*---为你推荐部分----*/
+.wei .top{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wei h2{
+    font-size: 16px;
+    font-weight: bold;
+/*    color: #ed5d55;*/
+    padding-top: 7px;
+    margin-bottom: 0px;
+}
+.wei img{
+    width: 100%;
+}
+.wei h3{
+    font-size: 14px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+/*    display: table;*/
+    overflow: hidden;
+    color: #232326;
+}
+.wei .p{
+/*    font-size: 16px;*/
+/*    height: 30px;*/
+    color: #ff5959;
+    float: left;
+}
+.wei .span1{
+    color: #ff5959;
+    font-size: 14px;
+}
+.wei .span2{
+    color: #232326;
+    font-size: 12px;
+}
+.wei .col-xs-6{
+    padding: 15px;
+}
+.wei .row{
+    margin: 0px;
+}
+.wei .container{
+    margin: 0;
+    padding: 0;
+}
+.wei .kan{
+    font-size: 12px;
+    color: #686868;
+    border: 1px solid #e2e2e2;
+/*    display: table;*/
+    padding: 2px 4px;
+    float: right;
+}
+.wei .ziying{
+    background-image: url(../images/weinituijian/ziying.png);
+    width: 33px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+}
+.wei .quanqiugou{
+    background-image: url(../images/weinituijian/quanqiugou.png);
+    width: 46px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+}
+
 
 
 
@@ -410,7 +495,9 @@ nav .hot {
 
 /*---main部分样式---*/
 .classify .main{
-    
+/*    position: fixed;*/
+    width: 100%;
+/*    margin-bottom: 200px;*/
 }
 .classify .main .lis a{
     color: #333;
@@ -428,8 +515,8 @@ nav .hot {
     margin-top: 41px;
     padding:0px;
     border-right: 1px #dddddd solid;
-    overflow: scroll;
-    height:480px; 
+/*    overflow: scroll;*/
+/*    height:480px; */
 }
 .classify .main .active{
     color: #fff;
@@ -438,8 +525,8 @@ nav .hot {
 .classify .main .col-xs-9{
     margin-top: 41px;
     padding: 0;
-    overflow: scroll;
-    height:480px;
+/*    overflow: scroll;*/
+/*    height:480px;*/
 }
 .classify .mainn li{
     list-style: none;
@@ -494,4 +581,261 @@ nav .hot {
 .classify .mainn1 .main1{
     box-shadow:0px 5px 5px #ededed;
     border-bottom: 1px #dddddd solid;
+}
+
+
+
+
+
+/*--cart部分样式----*/
+
+
+/*--header部分样式-*/
+.cart .header{
+    padding: 9px 10px;
+    border-bottom: 1px #dddddd solid;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 41px;
+    z-index: 100;
+}
+.cart .header h2{
+    font-size: 20px;
+    margin: -8px;
+    text-align: center;
+}
+.cart .header a{
+    position: absolute;
+}
+.cart .main{
+    padding-top: 41px;
+    background-color: #eee;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.cart .main p{
+    padding-top: 20px;
+    padding-bottom:10px;
+
+}
+.cart .main img{
+    margin-top: 50px;
+    height: 50px;
+    width: 64px;
+}
+.cart .main a{
+    padding: 5px 10px;
+    background-color: #f66;
+    color: #fff;
+
+}
+/*
+.cart .cai img{
+    width: 100%;
+}
+.cart .row{
+    margin: 0;
+}
+.cart .col-xs-6{
+    padding: 0;
+}*/
+.cart .top{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.cart h2{
+    font-size: 16px;
+    font-weight: bold;
+/*    color: #ed5d55;*/
+    padding-top: 7px;
+    margin-bottom: 0px;
+}
+.cart img{
+    width: 100%;
+}
+.cart h3{
+    font-size: 14px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+/*    display: table;*/
+    overflow: hidden;
+    color: #232326;
+}
+.cart .p{
+/*    font-size: 16px;*/
+/*    height: 30px;*/
+    color: #ff5959;
+    float: left;
+}
+.cart .span1{
+    color: #ff5959;
+    font-size: 14px;
+}
+.cart .span2{
+    color: #232326;
+    font-size: 12px;
+}
+.cart .col-xs-6{
+    padding: 15px;
+}
+.cart .row{
+    margin: 0px;
+}
+.cart .container{
+    margin: 0;
+    padding: 0;
+}
+.cart .kan{
+    font-size: 12px;
+    color: #686868;
+    border: 1px solid #e2e2e2;
+/*    display: table;*/
+    padding: 2px 4px;
+    float: right;
+}
+.cart .ziying{
+    background-image: url(../images/weinituijian/ziying.png);
+    width: 33px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+}
+.cart .quanqiugou{
+    background-image: url(../images/weinituijian/quanqiugou.png);
+    width: 46px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover;
+}
+
+
+
+
+/*---my---*/
+/*--header部分样式-*/
+.my .header{
+    padding: 9px 10px;
+    border-bottom: 1px #dddddd solid;
+    background-color: #fff;
+}
+.my .header .aa{
+    float: left;
+    padding-right: 5px;
+    width: 5%;
+}
+.my .header .center{
+    float: left;
+    text-align: center;
+    width: 90%;
+}
+.my .header .center p{
+    color: #333;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.my .header .a{
+    float: right;
+    width: 5%;
+}
+.my .header i{
+    color: #333;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+
+
+
+/*---main部分样式--*/
+.my .main .top{
+    background-image: url(../images/my/bg.jpg);
+    background-size: cover;
+    height: 160px;
+    text-align: center;
+    margin-bottom: 66SSSpx;
+}
+.my .main .top .img img{
+    width: 70px;
+    height: 70px;
+    margin-top: 30px;
+}
+.my .main .row img{
+    width: 25px;
+    height: 25px;
+}
+.my .main .row {
+    margin: 0;
+}
+.my .main .top .col-xs-3{
+    padding: 10px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+.my .main .top .col-xs-3 p{
+    margin: 0;
+}
+.my .main {
+    background-color: #eee;
+}
+.my .main .dingdan{
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.my .main .dingdan p{
+    margin: 0px;
+    padding: 10px;
+    color: #333;
+}
+.my .main .dingdan i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.my .main .dingdan span{
+    float: right;
+}
+.my .main .dingdan1{
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+.my .main .dingdan1 p{
+    margin: 0px;
+}
+.my .main .dingdan1 .p{
+    margin: 0px;
+    padding: 10px;
+    color: #333;
+}
+.my .main .dingdan1 .row{
+    text-align: center;
+}
+.my .main .dingdan1 span{
+    float: right;
+}
+.my .main .dingdan1 .col-xs-3{
+    padding: 10px 0px;
+}
+.my .main .dingdan1 i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+
+
+
+
+.bl{
+    border-left:1px #dddddd solid;
+}
+.bt{
+    border-top: 1px #dddddd solid;
+}
+.bb{
+    border-bottom: 1px #dddddd solid;
+}
+.br{
+    border-right: 1px #dddddd solid;
 }
