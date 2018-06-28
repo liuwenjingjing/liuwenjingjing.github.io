@@ -30,7 +30,7 @@
 
 
 body{
-    margin-bottom: 2000px;
+    font-family: 'Roboto Slab', serif;
 }
 /*----header部分样式--*/
 .index .header{
@@ -138,6 +138,9 @@ body{
 .index .banner .row1 img{
     height: 350px;
 }
+.index .banner .row1{
+    margin-bottom: 40px;
+}
 .index .banner .col-md-7 .a1 .a{
     border: 1px #ccc solid;
     padding: 5px;
@@ -145,6 +148,10 @@ body{
     display: block;
     width: 21%;
     text-decoration: none;
+    color: #333;
+}
+.index .banner .col-md-7 .a1 .aa{
+    color: #333;
 }
 .index .banner .col-md-7 .a1 .a:hover{
     color: #ff0000;
@@ -164,6 +171,7 @@ body{
     transition: 0.5s;
 }
 .index .banner .col-md-5 .a{
+    color: #333;
     border: 1px #ccc solid;
     padding: 5px;
     font-size: 12px;
@@ -173,8 +181,25 @@ body{
     margin-top: 30px;
 }
 .index .banner h2{
-    font-size: 28px;
+    font-size: 26px;
+    font-weight: bold;
 }
+.index .banner .row2 img{
+    width: 100%;
+}
+.index .banner .ba-co1 img{
+    width: 100%;
+}
+.index .banner .ba-co1 .container{
+    padding: 0;
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+
+
+
 
 
 

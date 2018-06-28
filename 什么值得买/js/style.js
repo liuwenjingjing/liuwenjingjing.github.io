@@ -242,3 +242,14 @@ window.onscroll = function(){
         
     }
 }
+
+
+
+///点击消失
+var a1=document.querySelector(".toptop .a .a2");
+var toptop=document.querySelector(".toptop");
+console.log(toptop);
+console.log(a1);
+a1.onclick=function(){
+    toptop.style.display="none";
+}
