@@ -531,11 +531,14 @@ input::-webkit-input-placeholder{
     }
     
     
+    .header .bottom .ul1 {
+        width: 300px;
+        margin: 0 auto;
+    }
+
     
     
-    
-    
-        .header .navbar-toggle{
+    .header .navbar-toggle{
         position: fixed;
         top: 0px;
         right: 0px;
@@ -570,7 +573,9 @@ input::-webkit-input-placeholder{
 
     
     
-    
+    .header .bottom .ul1 li {
+        margin: 15px;
+    }
     
     .index .main1 .top h2{
         font-size: 30px;
