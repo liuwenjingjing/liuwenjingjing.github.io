@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页—什么值得买</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="font-btn/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="index">
+<div class="toptop">
+        <div class="bottom">
+           <div class="bottomn">
+               <div class="a">
+                    <a href="" class="a1">点击下载什么值得买APP</a>
+                    <a  class="a2">继续浏览什么值得买移动网页 ></a>
+                </div>
+                <div class="row">
+                 <div class="col-xs-3">
+                        <a href=""><img src="images/4.png" alt=""></a>
+                        <p>珍品防伪码</p>
+                    </div>
+                  <div class="col-xs-3">
+                        <a href=""><img src="images/3.png" alt=""></a>
+                        <p>质量保证</p>
+                    </div>
+                   <div class="col-xs-3">
+                        <a href=""><img src="images/2.png" alt=""></a>
+                        <p>闪电发货</p>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href=""><img src="images/1.png" alt=""></a>
+                        <p>两件包邮</p>
+                    </div>
+                </div>
+           </div>
+    </div>
+    <div class="t">
+<!--       <img src="images/kai1-bg.jpg" alt="">-->
+   </div>
+</div>
+ 
+ 
+ 
+  <!---底部导航--->
+   <nav>
+        <ul>
+            <li class="active">
+                <a href="index.html"><i class="fa fa-home"></i><span>首页</span></a>
+            </li>
+            <li>
+                <a href="classify.html"><i class="fa fa-tasks"></i><span>分类</span></a>
+            </li>
+<!--
+            <li>
+                <a href="me.html"><i class="fa fa-times-circle-o"><i class="hot"></i></i><span>觅Me</span></a>
+            </li>
+-->
+            <li>
+                <a href="cart.html" class="hott"><i class="fa fa-shopping-cart"></i><span>购物车</span></a>
+            </li>
+            <li>
+                <a href="my.html"><i class="fa fa-user-o"></i><span>我的</span></a>
+            </li>
+        </ul>
+    </nav>
+    
+    
+<div class="top">
+    <div class="topp">
+    <!---header--->
+        <div class="header clearfix">
+            <a href="index.html"><img src="images/shouye/logo.png" alt=""></a>
+            <div class="center"><i class="fa fa-search"></i><p>搜索分类/品牌/商品</p><input type="text" placeholder=""></div>
+            <a href="" class="a">下载</a>
+        </div>
+    <!--nav--->
+       <div class="in-nav">
+           <ul class="clearfix">
+               <li class="active"><a href="#">首页</a></li>
+               <li><a href="#">国内好价</a></li>
+               <li><a href="#">淘淘好价</a></li>
+               <li><a href="#">全部好价</a></li>
+               <li><a href="#">好文</a></li>
+               <li><a href="#">优惠券</a></li>
+               <li><a href="#">白菜党</a></li>
+               <li><a href="#">好物榜单</a></li>
+           </ul>
+           <div class="bottom">
+               <a href="classify.html"><p><i class="fa fa-list"></i>分类</p></a>
+           </div>
+       </div>
+    </div>   
+</div>
+
+
+<!--轮播图-->
+    <div class="banner swiper-container">
+<!--        <div class="">-->
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/shouye/lunbo1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/shouye/lunbo2.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/shouye/lunbo3.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/shouye/lunbo4.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/shouye/lunbo5.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/shouye/lunbo6.png" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+<!--        <div class="swiper-pagination"></div>-->
+<!--    </div>-->
+    </div>
+   
+   
+   <!--main-->
+   <div class="main" id="in-ma">
+       <div class="row" v-for="ins in inma">
+           <div class="col-xs-5"><a :href="ins.link1"><i class="i1">{{ins.i}}</i><i class="i2">{{ins.i1}}</i><img :src="ins.img" alt=""></a></div>
+           <div class="col-xs-7">
+              <div class="ma-7">
+                   <h3>{{ins.h3}}</h3>
+                   <a :href="ins.link2"><span>{{ins.span}}</span></a>
+                   <div class="clearfix p">
+                       <p class="p1">{{ins.p1}}</p>
+                       <p>{{ins.p2}}</p>
+                       <i :class="ins.ico">{{ins.icos}}</i>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   <div class="wei">
+       <div class="top">
+                <h2>为/你/推/荐</h2>
+            </div>
+            <div class="row" id="wei">
+                <div class="col-xs-6" v-for="arr in arrs">
+                   <div>
+                      <a :href="arr.link1"><img :src="arr.img" alt=""></a>
+                      <a :href="arr.link1"><h3> {{arr.name}}</h3></a>
+                      <p class="clearfix">￥<span class="span1">{{arr.price1}}</span><del class="span2">{{arr.price2}}</del><a :href="arr.link2" class="kan">{{arr.kan}}</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-6 sss" v-for="arr in arrs">
+                   <div>
+                      <a :href="arr.link1"><img :src="arr.img" alt=""></a>
+                      <a :href="arr.link1"><h3> {{arr.name}}</h3></a>
+                      <p class="clearfix">￥<span class="span1">{{arr.price1}}</span><del class="span2">{{arr.price2}}</del><a :href="arr.link2" class="kan">{{arr.kan}}</a></p>
+                    </div>
+                </div>
+            </div>
+   </div>
+   <div class="bottomm clearfix">
+       <img src="images/bottom.png" alt="">
+       <div class="p">
+           <span>高性价比网购推荐</span>
+            <p>品质生活起点站</p>
+       </div>
+        <a href="">立即查看</a>
+        <span class="span">X</span>
+   </div>
+   
+   <div class="dakai"><a href=""></a></div>
+   
+    <div class="totop"></div>
+    
+    
+    <script src="js/vue.js"></script>
+    <script src="js/timeCountDown.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/swiper-4.2.6.min.js"></script>
+    <script src="bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+    <script src="js/style.js"></script>
+</body>
+</html>
