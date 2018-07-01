@@ -248,8 +248,16 @@ window.onscroll = function(){
 ///点击消失
 var a1=document.querySelector(".toptop .a .a2");
 var toptop=document.querySelector(".toptop");
-console.log(toptop);
-console.log(a1);
-a1.onclick=function(){
-    toptop.style.display="none";
+if(toptop!=null){
+    if(sessionStorage.toptop=="floes"){
+        toptop.style.display="none";
+    }else{
+        toptop.style.display="block";
+    }
+}
+if(toptop!=null){
+   a1.onclick=function(){
+        toptop.style.display="none";
+        sessionStorage.toptop="floes"
+    }
 }
